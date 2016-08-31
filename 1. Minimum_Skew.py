@@ -9,7 +9,6 @@ def skew_diagram(Genome):
         else:
             skew[i+1] = skew[i]
     min_skew = min(skew)  
-          
     for i in range(len(Genome)+1):
         if skew[i] == min_skew:
             origin.append(i)
