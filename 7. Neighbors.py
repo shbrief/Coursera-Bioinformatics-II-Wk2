@@ -16,16 +16,16 @@ def neighbors(pattern, d):
     if len(pattern) == 1:
         return {'A', 'C', 'G', 'T'}
         
-    neighborhood = set()
+    neighborhood = []
     nucleotide = ['A', 'C', 'G', 'T']
     suffix_neighbors = neighbors(pattern[1:], d)
 
     for text in suffix_neighbors:
         if hamming_distance(pattern[1:], text) < d:
             for e in nucleotide:
-                neighborhood.add(e+text)
+                neighborhood.append(e+text)
         else:
-            neighborhood.add(pattern[0]+text)
+            neighborhood.append(pattern[0]+text)
     return neighborhood
 
 print("\n".join(neighbors(pattern,d)))
