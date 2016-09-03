@@ -18,3 +18,7 @@ def freq_words_mismatch(Text, k, d):
             pattern = number_to_pattern(i, k)
             freq_pattern.append(pattern)
     return freq_pattern
+
+
+# - Sample Input: ACGTTGCATGTCGCATGATGCATGAGAGCT 4 1
+# - Sample Output: ATGC ATGT GATG
