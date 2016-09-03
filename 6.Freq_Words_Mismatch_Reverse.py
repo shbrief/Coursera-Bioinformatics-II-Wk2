@@ -1,5 +1,3 @@
-from 7_Neighbors.py import neighbors
-
 def freq_words_mismatch_reverse_sorting(Text, k, d):
     frequent_pattern = []
     neighborhood = []
