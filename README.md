@@ -1,3 +1,4 @@
 # Coursera-Bioinformatics1-wk2
 
-Problems solved using Python
+Python version 
+(R version will be updated later)
